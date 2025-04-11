@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #3498db;
+    margin-bottom: 20px;
+}
+
+.input-area {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.tabs {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-bottom: none;
+    border-radius: 4px 4px 0 0;
+    margin-right: 5px;
+}
+
+.tab.active {
+    background-color: white;
+    border-bottom-color: white;
+}
+
+.task {
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-info {
+    flex-grow: 1;
+}
+
+.task-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.task-date {
+    font-size: 12px;
+    color: #777;
+}
+
+.task-actions {
+    display: flex;
+    gap: 5px;
+}
+
+.btn-complete {
+    background-color: #1316e3;
+}
+
+.btn-complete:hover {
+    background-color: #27ae60;
+}
+
+.btn-edit {
+    background-color: #f39c12;
+}
+
+.btn-edit:hover {
+    background-color: #e67e22;
+}
+
+.btn-delete {
+    background-color: #e74c3c;
+}
+
+.btn-delete:hover {
+    background-color: #c0392b;
+}
+
+.completed-task {
+    background-color: #f1f1f1;
+}
+
+.completed-task .task-title {
+    text-decoration: line-through;
+    color: #777;
+}
+
+.edit-form {
+    display: none;
+    margin-top: 10px;
+}
+
+.edit-form.active {
+    display: block;
+}
+
+.edit-buttons {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.empty-message {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+    font-style: italic;
+}
